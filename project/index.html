@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Intrest Calculator</title>
+    <script src="../project/index.js"></script>
+    <link rel="stylesheet" href="../project/index.css">
+</head>
+<body>
+    <div class="maindiv">
+         <img src="../download (1).jpeg" alt="Intrest Calculater">
+        <h1>Simple Interest Calculator</h1>
+
+        Amount: <input type="number" id="principal"> <br />
+        Rate: <input type="range" id="rate" min="1 " max="20" value="10.25" step="0.25" onchange="updateRate()"> 
+        <span id="rate_val"></span>% <br>
+        No. of Years: <input type="number" id="years"> <br />
+        Interest : <span id="result"></span><br>
+
+        <button id="btn" onclick="compute()">Compute</button>
+    </div>
+</body>
+<footer>
+    <h1> &#169; This Calculator belongs to Me...</h1>
+</footer>
+<script>
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText = rateval;
+</script>
+</html>
